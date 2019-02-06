@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>jQuery TestApp | Events</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        background: #f4f4f4;
+        line-height: 1.5em;
+      }
+
+      header {
+        background: #333;
+        color: aliceblue;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .head h1 {
+        line-height: 45px;
+      }
+
+      .container {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+      }
+
+      .button {
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0 10px 10px 0;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <header class="head">
+      <h1>jQuery TestApp - Events</h1>
+    </header>
+
+    <div class="button">
+      <button class="button" id="tog1">Toggle Para 1</button>
+      <button class="button" id="tog2">Toggle Para 2</button>
+    </div>
+
+    <div class="container">
+      <h1 id="head1">Heading 1</h1>
+      <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt itaque
+        hic aspernatur eaque quasi facilis, recusandae amet nulla excepturi
+        dolore. Quam tempora autem perspiciatis assumenda aliquid, nam eos
+        explicabo veritatis.
+      </p>
+
+      <h1 id="head2">Heading 2</h1>
+      <p id="para2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem eaque
+        sit natus veritatis numquam, quibusdam alias maiores hic repellat
+        dolores dolorem obcaecati labore inventore saepe asperiores totam nulla
+        quo modi.
+      </p>
+    </div>
+  </body>
+</html>
+
+<script>
+  //   $("#container h1").show();
+
+  //   $("#tog1").dblclick(function() {
+  //     $(".container #para1").toggle();
+  //   });
+
+  // $("#tog1").on("mouseenter", function() {
+  //   $(".container #para1").toggle();
+  // });
+
+  // $("#tog1").on("mouseleave", function() {
+  //   $(".container #para1").toggle();
+  // });
+
+  // $("#tog2").on("mouseenter", function() {
+  //   $(".container #para2").toggle();
+  // });
+
+  // $("#tog2").on("mouseleave", function() {
+  //   $(".container #para2").toggle();
+  // });
+
+  $("#tog2").on("mousedown", function() {
+    $(".container #para2").toggle();
+  });
+
+  $("#tog2").on("mouseup", function() {
+    $(".container #para2").toggle();
+  });
+</script>
